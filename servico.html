@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ByTech - soluções em entregas</title>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4Rqsz0t00KZYQJinRHEJ1rXQ-TXGf_lk&libraries=places"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/servicos.css" />
+  </head>
+  <body>
+    <header>
+      <div class="cabecalho">
+        <img src="/imagem/logo.png" alt="Logo" />
+
+        <nav class="navegacao">
+          <ul>
+            <li><a href="index.html#sobre-nos">Sobre Nós</a></li>
+            <li><a href="index.html#contatos">Contatos</a></li>
+            <li><a href="index.html#recursos">Recursos</a></li>
+            <li><a href="register.html" class="cads-box">Cadastre-se</a></li>
+            <li><a href="login.html" class="logs-box">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="container">
+      <div id="status">Serviço</div>
+      <div class="inputs">
+        <div class="input-box">
+          <label for="remetente">Remetente:</label>
+          <div class="input-field">
+            <i class="bi bi-person-circle"></i>
+            <input type="text" id="nomeRemetente" placeholder="Nome" />
+          </div>
+
+          <div class="input-field">
+            <i class="bi bi-person-circle"></i>
+            <input type="text" id="sobrenomeRemetente" placeholder="Sobrenome"/>
+          </div>
+
+          <div class="input-field">
+            <i class="bi bi-signpost"></i>
+            <input type="text" id="ruaRemetente" placeholder="Rua" />
+          </div>
+
+          <div class="input-field">
+            <i class="bi bi-123"></i>
+            <input type="text" id="numberRemetente" placeholder="Numero" />
+          </div>
+
+          <div class="input-field">
+            <i class="bi bi-geo-alt-fill"></i>
+            <input type="text" id="bairroRemetente" placeholder="Bairro" />
+          </div>
+
+          <div class="input-field">
+            <i class="bi bi-123"></i>
+            <input type="text" id="cepRemetente" placeholder="CEP" />
+          </div>
+
+          <div class="input-field">
+            <i class="bi bi-geo-alt-fill"></i>
+            <input type="text" id="cidadeRemetente" placeholder="Cidade" />
+          </div>
+
+          <div class="input-field">
+            <i class="bi bi-geo-alt-fill"></i>
+            <input type="text" id="estadoRemetente" placeholder="Estado" />
+          </div>
+
+          <div class="input-field">
+            <i class="bi bi-123"></i>
+            <input type="text" id="cpfRemetente" placeholder="CPF" />
+          </div>
+
+          <div class="input-field">
+            <i class="bi bi-phone"></i>
+            <input type="text" id="contatoRemetente" placeholder="Contato" />
+          </div>
+        </div>
+        <div class="input-box">
+          <label for="destinatario">Destinatario:</label>
+          <div class="input-field">
+            <i class="bi bi-person-circle"></i>
+            <input type="text" id="nomeDestinatario" placeholder="Nome" />
+          </div>
+
+          <div class="input-field">
+            <i class="bi bi-person-circle"></i>
+            <input type="text" id="sobrenomeDestinatario" placeholder="Sobrenome"/>
+          </div>
+
+          <div class="input-field">
+            <i class="bi bi-signpost"></i>
+            <input type="text" id="ruaDestinatario" placeholder="Rua" />
+          </div>
+
+          <div class="input-field">
+            <i class="bi bi-123"></i>
+            <input type="text" id="numberDestinatario" placeholder="Numero" />
+          </div>
+
+          <div class="input-field">
+            <i class="bi bi-geo-alt-fill"></i>
+            <input type="text" id="bairroDestinatario" placeholder="Bairro" />
+          </div>
+
+          <div class="input-field">
+            <i class="bi bi-123"></i>
+            <input type="text" id="cepDestinatario" placeholder="CEP" />
+          </div>
+
+          <div class="input-field">
+            <i class="bi bi-geo-alt-fill"></i>
+            <input type="text" id="cidadeDestinatario" placeholder="Cidade" />
+          </div>
+
+          <div class="input-field">
+            <i class="bi bi-geo-alt-fill"></i>
+            <input type="text" id="estadoDestinatario" placeholder="Estado" />
+          </div>
+
+          <div class="input-field">
+            <i class="bi bi-123"></i>
+            <input type="text" id="cpfDestinatario" placeholder="CPF" />
+          </div>
+
+          <div class="input-field">
+            <i class="bi bi-phone"></i>
+            <input type="text" id="contatoDestinatario" placeholder="Contato" />
+          </div>
+        </div>
+      </div>
+      <button id="serv-button" onclick="calculateRoute()">Calcular Rota</button>
+    </main>
+
+
+    <div id="directionsPanel"></div>
+
+    <script src="/js/main.js"></script>
+  </body>
+</html>
