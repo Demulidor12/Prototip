@@ -1,0 +1,417 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+}
+
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #000;
+    color: #fefeff;
+    padding: 15px;
+    border-bottom: solid 1px #fefeff;
+    gap: 3px;
+}
+
+/* Estilos específicos para a classe 'cads' */
+.cads {
+    width: 150px;
+    height: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #4495fa;
+    color: white;
+    padding: 20px;
+    cursor: pointer;
+}
+
+button{
+    gap: 3px;
+}
+/* Estilos específicos para a classe 'logs' */
+.logs {
+    background-color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Estilos para a classe 'cabecalho' dentro do cabeçalho */
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho img {
+    max-width: 150px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    margin-right: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fefeff;
+}
+nav a:hover{
+    color: #4459fa;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/* Outros estilos ... */
+
+/* Estilos específicos para a classe 'cads-box' */
+.cads-box {
+    display: block;
+    background-color: #4495fa;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 8px;
+}
+
+.cads-box:hover {
+    text-transform: none;
+    color: #fefeff;
+    background-color: #3a7fd5;
+}
+
+/* Estilos específicos para a classe 'logs-box' */
+.logs-box {
+    display: block;
+    background-color: white;
+    color: #4495fa;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s;
+    border-radius: 8px;
+}
+
+.logs-box:hover {
+    color: #3a7fd5;
+}
+
+/* ... Outros estilos ... */
+
+.inicio{
+    background-color: #000;
+    display: flex;
+    
+}
+/* Seção de apresentação */
+.apresentacao {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    background-color: #000;
+    color: #4495FA;
+    margin-top: 15px;
+}
+
+.apresentacao h1 {
+    color: #4495FA;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.apresentacao p {
+    margin-bottom: 25px;
+    color: #fefeff;
+    font-family: 'Sarabun', sans-serif;
+}
+
+.apresentacao a {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    background-color: white;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-family: 'Sarabun', sans-serif;
+}
+
+.img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
+.ap1{
+    display: block;
+    background-color: white;
+    color: #000;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.sobre-nos {
+    width: 100%;
+    background-color: #000;
+    color: #fefeff;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contato2{
+    display: block;
+    background-color: #4495FA;
+    color: #fefeff;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.sobre-nos h1 span {
+    color: #4495fa;
+}
+
+.contato {
+    width: 100%;
+    color: #fefeff;
+    background-color: #4495FA;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+    overflow: hidden;
+}
+
+.cnt1{
+    padding: 8%;
+    width: 40%;
+    background-color: #000;
+    color: #4495FA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.cnt2{
+    margin-left: 20%;
+    display: flex;
+    flex-direction: column;
+    color: #fefeff;
+}
+.cnt2 h1{
+    color: #000;
+    font-family: 'Oswald', sans-serif;
+}
+.contato form {
+    padding: 15px;
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Sarabun', sans-serif;
+}
+
+.contato label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contato input,
+.contato textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    border-radius: 8px;
+}
+
+.contato button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fefeff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.maps{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.recursos {
+    background-color: #000;
+    padding: 50px;
+    text-align: center;
+}
+
+.info-recurso {
+    color: #fefeff;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.info-recurso img{
+    width: 20vw;
+    height: 20vh;
+    margin-bottom: 15px;
+}
+
+.info-recurso p{
+    margin-bottom: 5px;
+    font-family: 'Sarabun', sans-serif;
+}
+
+.info-recurso h3{
+    color: #4495FA;
+    font-family: 'Oswald', sans-serif;
+}
+
+.info-recurso div {
+    flex: 0 1 30%;
+}
+
+.info-recurso img {
+    max-width: 100%;
+    height: auto;
+}
+
+.servico {
+    background-color: #000;
+    padding: 50px;
+}
+
+.info-servico {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.info-servico h3{
+    color: #ff4040;
+    font-family: 'Oswald', sans-serif;
+}
+
+.info-servico P{
+    color: #fefeff;
+    font-family: 'Sarabun', sans-serif;
+}
+.info-servico img{
+    width: 20vw;
+    height: 20vh;
+    margin-bottom: 15px;
+}
+.info-servico div {
+    flex: 0 1 30%;
+}
+
+.info-servico img {
+    max-width: 100%;
+    height: auto;
+}
+
+.avaliacao form {
+    padding: 15px;
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FF4040;
+    font-family: 'Sarabun', sans-serif;
+}
+
+.avaliacao label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.avaliacao input,
+.avaliacao textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    border-radius: 8px;
+    font-family: 'Sarabun', sans-serif;
+}
+
+.avaliacao button {
+    padding: 10px 20px;
+    background-color: #FF4040;
+    text-transform: uppercase;
+    color: #fefeff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 8%;
+}
+
+.radio-group{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+footer {
+    background-color: #4495FA;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+}
+
+h1, h3 h4{
+    font-family: 'Oswald', sans-serif;
+}
+
+p{
+    font-family: 'Sarabun', sans-serif;
+}
